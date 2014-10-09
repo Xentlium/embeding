@@ -1,0 +1,263 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background: #CCC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.center {
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    padding-top: 1.5em;
+    font-size: 32px
+}
+
+h4, dt, h5 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 1.5em
+}
+
+h5 {
+    font-size: 1em;
+}
+
+.cursor-point { cursor: pointer }
+
+/* Header */
+#header {
+    background: #EEE;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#banner {
+    max-width: 840px;
+    margin: 0 auto;
+    height: 256px;
+    background-image: url('../img/Banner.png')
+}
+
+#logo, #slogan {
+    display: inline-block;
+    margin: 8px 31px 6px 0px;
+}
+
+#slogan {
+    vertical-align: bottom;
+    position: relative;
+    bottom: 2em;
+}
+
+.h-menu-objects {
+    height: 3.4em;
+    background-color: #333;
+    color: #ED7000;
+}
+
+.h-menu-item {
+    display: inline-block;
+    font-size: 2em;
+    background-color: #111;
+    width: 256px;
+    height: 1.5em;
+}
+
+li.h-menu-item a {
+    color: #ED7000;
+}
+
+.h-menu-current, 
+.h-menu-current:hover, 
+li.h-menu-current a, 
+li.h-menu-current:hover a {
+    background-color: #ED7000;
+    color: #111;
+    height: 1.7em;
+}
+
+.h-menu-item a, .h-menu-current a {
+    text-decoration: none;
+    margin-top: 8px;
+    position: relative;
+    top: .2em
+}
+
+li.h-menu-item:hover {
+    background-color: #ED7000;
+    color: #111;
+    text-decoration: underline;
+    cursor: pointer;
+    height: 2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-duration: 256ms;
+}
+
+li.h-menu-item:hover > a { color: #333 }
+
+li.with-submenu:hover,
+li.with-submenu:hover > a,
+ul.submenu li a {
+    transition: 0ms;
+    color: #333
+}
+
+.submenu {
+    visibility: hidden;
+    position: absolute;
+    background-color: #ed7000;
+    color: #333;
+    font-size: .7em;
+    width: 256px;
+    z-index: 1;
+    margin: 0;
+    padding: 8px 0 16px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: default;
+}
+
+.submenu li {
+    margin: 3px;
+    padding: 3px;
+    padding-bottom: 9px;
+    cursor: pointer;
+}
+
+ul.submenu li:hover,
+ul.submenu li:hover > a {
+    background-color: #333;
+    color: #ED7000;
+}
+
+.h-menu-item:hover > .submenu {
+    visibility: visible
+}
+/* Header end */
+
+/* Content */
+#content {
+    max-width: 840px;
+    padding: 8px;
+    background-color: #EEE;
+    color: #333;
+    margin: 8px auto;
+}
+
+.home-post {
+    margin: 8px;
+    padding: 8px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.thumbnail {
+    width: 256px;
+    height: 256px;
+    background-color: #000;
+    margin: 8px;
+    margin-right: 32px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.thumbnail-vertcent {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.post-text {
+    padding-left: 32px;
+}
+
+.post-text h2 {
+    color: #ED7000;
+    font-size: 2em;
+}
+
+.article-img {
+    max-width: 480px;
+    float: right;
+}
+
+.post-text p, .post-text li, .post-text dd {
+    padding-top: 8px;
+    font-size: 1em;
+}
+
+.leftalign {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.project {
+    text-align: center;
+    position: relative;
+    padding: 24px;
+}
+.imgframe {
+   width: 780px;
+   margin: 0 auto;
+   position: relative;
+   left: -16px;
+}
+
+
+.imgframe img {
+    max-width: 100%;
+}
+
+/* Footer */
+#footer {
+    padding: 16px;
+    background-color: #111;
+    color: #777;
+    /*height: 512px;*/
+}
+
+#footer-content {
+    max-width: 840px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#footer div div {
+    display: inline-block;
+    width: 30%;
+    top: 5px;
+}
+
+li {
+    list-style: none
+}
+
+a.lightgray {
+    color: #777
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
